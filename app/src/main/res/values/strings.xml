@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Emaily</string>
+    <string name="inbox">Inbox</string>
+    <string name="primary">Primary</string>
+</resources>

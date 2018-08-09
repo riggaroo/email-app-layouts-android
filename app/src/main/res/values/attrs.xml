@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="smallTextAppearance" format="reference" />
+    <attr name="subheadingTextAppearance" format="reference" />
+    <attr name="mediumTextAppearance" format="reference" />
+    <attr name="largeTextAppearance" format="reference" />
+    <attr name="extraLargeTextAppearance" format="reference" />
+    <attr name="outlineBorderlessButtonStyle" format="reference" />
+
+</resources>

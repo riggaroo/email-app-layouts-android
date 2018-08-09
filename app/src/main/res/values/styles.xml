@@ -1,0 +1,51 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <item name="smallTextAppearance">@style/EmailyTextAppearance.Small</item>
+        <item name="mediumTextAppearance">@style/EmailyTextAppearance.Medium</item>
+        <item name="subheadingTextAppearance">@style/EmailyTextAppearance.Subheading</item>
+        <item name="largeTextAppearance">@style/EmailyTextAppearance.Large</item>
+        <item name="extraLargeTextAppearance">@style/EmailyTextAppearance.ExtraLarge</item>
+        <item name="android:buttonStyle">@style/EmailyButton</item>
+        <item name="android:borderlessButtonStyle">@style/EmailyButton.Borderless.Dark</item>
+        <item name="outlineBorderlessButtonStyle">@style/EmailyButton.Borderless.Outline</item>
+
+    </style>
+
+    <style name="EmailyTextAppearance.Small" parent="TextAppearance.AppCompat.Caption" />
+    <!-- textSize: 16sp -->
+    <style name="EmailyTextAppearance.Subheading" parent="TextAppearance.AppCompat.Subhead">
+    </style>
+    <!-- textSize: 18sp -->
+    <style name="EmailyTextAppearance.Medium" parent="TextAppearance.AppCompat.Medium">
+    </style>
+    <!-- textSize: 24sp -->
+    <style name="EmailyTextAppearance.Large" parent="TextAppearance.AppCompat.Headline" />
+    <!-- textSize: 45sp -->
+    <style name="EmailyTextAppearance.ExtraLarge" parent="TextAppearance.AppCompat.Display2" />
+
+    <style name="EmailyButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/color_text_button</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+    <style name="EmailyButton.Borderless" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/color_text_button_borderless_light_theme</item>
+    </style>
+    <style name="EmailyButton.Borderless.Dark">
+        <item name="android:textColor">@color/color_text_button_borderless_dark_theme</item>
+    </style>
+    <style name="EmailyButton.Borderless.Outline">
+        <item name="android:background">@drawable/bg_button_borderless_outline_light_theme</item>
+    </style>
+    <style name="EmailyButton.Borderless.Dark.Outline">
+        <item name="android:background">@drawable/bg_button_borderless_outline_dark_theme</item>
+    </style>
+
+
+</resources>

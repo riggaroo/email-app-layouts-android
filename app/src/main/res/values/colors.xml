@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EB2436</color>
+    <color name="colorPrimaryDark">#c62828</color>
+    <color name="colorAccent">#EB2436</color>
+    <color name="white">#ffffff</color>
+    <color name="off_white">#FFA5AD</color>
+
+    <color name="color_text_button_borderless_light_theme">@color/off_white</color>
+    <color name="color_text_button_borderless_dark_theme">#ffffff</color>
+    <color name="color_text_button">#ffffff</color>
+</resources>
