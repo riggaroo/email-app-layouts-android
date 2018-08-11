@@ -19,7 +19,7 @@
     <Transition
             motion:constraintSetEnd="@+id/end"
             motion:constraintSetStart="@+id/start"
-            motion:duration="1000"
+            motion:duration="1500"
             motion:interpolator="anticipate" />
 
     <OnSwipe
