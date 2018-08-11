@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.constraintlayout.motion.widget.MotionLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
+        app:layoutDescription="@xml/scene_drag"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
     <View
             android:layout_width="0dp"
             android:layout_height="220dp"
-            android:id="@+id/email_background"
+            android:id="@+id/emailBackground"
             android:background="?attr/colorPrimary"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +38,7 @@
             android:layout_width="56dp"
             android:layout_height="56dp"
             tools:srcCompat="@tools:sample/avatars"
-            android:id="@+id/imageView"
+            android:id="@+id/imageViewProfilePic"
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@+id/textViewInboxTitle"
             app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +48,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/textViewEmailName"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePic"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:textAppearance="?attr/mediumTextAppearance"
@@ -56,27 +57,28 @@
             tools:text="Esther Stone"
             android:textStyle="bold"
             android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/button"/>
+            app:layout_constraintEnd_toStartOf="@+id/button"
+            android:text="Esther Stone"/>
 
     <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView3"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
+            android:id="@+id/textViewEmailCount"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePic"
             android:layout_marginStart="16dp"
             app:layout_constraintTop_toBottomOf="@+id/textViewEmailName"
             tools:text="3 new messages"
             android:textColor="@color/off_white"
             android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/button"/>
+            app:layout_constraintEnd_toStartOf="@+id/button"
+            android:text="3 new messages"/>
 
     <androidx.recyclerview.widget.RecyclerView
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEmailCount"
             app:layout_constraintBottom_toBottomOf="parent"
             android:clipToPadding="false"
             android:paddingStart="16dp"
@@ -90,10 +92,20 @@
             style="?attr/outlineBorderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button"
+            android:id="@+id/buttonInboxType"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@+id/textViewInboxTitle"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/floatingActionButtonNewEmail"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            app:fabSize="normal"
+            android:src="@drawable/ic_quill_white_24dp"/>
+</androidx.constraintlayout.motion.widget.MotionLayout>
