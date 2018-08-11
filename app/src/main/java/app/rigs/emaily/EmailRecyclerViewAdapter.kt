@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import kotlinx.android.synthetic.main.list_item_email.view.*
 
 class EmailRecyclerViewAdapter(): ListAdapter<Email, EmailViewHolder>(DIFFER) {
@@ -37,5 +39,10 @@ class EmailViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         view.textViewEmailTime.text = email.time
         view.textViewEmailTextExtract.text = email.content
         view.textViewEmailSubject.text = email.subject
+        Glide.with(view)
+            .setDefaultRequestOptions(RequestOptions()
+                .circleCrop())
+            .load(email.profilePicUrl)
+            .into(view.imageViewEmailProfilePic)
     }
 }

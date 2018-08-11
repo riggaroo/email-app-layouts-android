@@ -83,6 +83,15 @@
                 android:layout_marginTop="16dp"
                 android:visibility="visible"
                 motion:layout_constraintTop_toBottomOf="@+id/textViewInboxTitle"/>
+        <Constraint
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@id/imageViewProfilePic"
+                android:layout_marginTop="16dp"
+                android:visibility="visible"
+                motion:layout_constraintTop_toBottomOf="@id/textViewInboxTitle"
+                motion:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"/>
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
@@ -140,7 +149,16 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginTop="16dp"
                 android:visibility="invisible"
-                motion:layout_constraintTop_toBottomOf="@+id/textViewInboxTitle"/>
+                motion:layout_constraintTop_toBottomOf="@id/textViewInboxTitle"/>
+        <Constraint
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@id/imageViewProfilePic"
+                android:layout_marginTop="16dp"
+                android:visibility="invisible"
+                motion:layout_constraintTop_toBottomOf="@id/textViewInboxTitle"
+                motion:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"/>
     </ConstraintSet>
 
 </MotionScene>
